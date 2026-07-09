@@ -41,6 +41,8 @@ const baseRules = [
     `RULE-SET,GFWList,${PROXY_GROUPS.SELECT}`,
     `GEOIP,cn,DIRECT`,
     `RULE-SET,direct,DIRECT`,
+    `GEOSITE,CN,DIRECT`,
+    `GEOSITE,GEOLOCATION-CN,DIRECT`,
     `RULE-SET,proxy,${PROXY_GROUPS.SELECT}`,
     `MATCH,${PROXY_GROUPS.FINAL}`,
 ];
