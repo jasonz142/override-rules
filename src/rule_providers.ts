@@ -128,7 +128,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
         format: "text",
         interval: 86400,
         url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/direct-list.txt",
-        path: "./ruleset/direct.txt,
+        path: "./ruleset/direct.txt",
     },
     reject: {
         type: "http",
