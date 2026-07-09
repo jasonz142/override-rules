@@ -7,6 +7,7 @@ const baseRules = [
     `RULE-SET,adblockmihomo,${PROXY_GROUPS.AD_BLOCK}`,
     `RULE-SET,ADBlock,${PROXY_GROUPS.AD_BLOCK}`,
     `RULE-SET,AdditionalFilter,${PROXY_GROUPS.AD_BLOCK}`,
+    `RULE-SET,reject,${PROXY_GROUPS.AD_BLOCK}`,
     `RULE-SET,SogouInput,${PROXY_GROUPS.SOGOU_INPUT}`,
     `DOMAIN-SUFFIX,truthsocial.com,${PROXY_GROUPS.TRUTH_SOCIAL}`,
     `RULE-SET,StaticResources,${PROXY_GROUPS.STATIC_RESOURCES}`,
@@ -39,6 +40,8 @@ const baseRules = [
     `RULE-SET,Crypto,${PROXY_GROUPS.CRYPTO}`,
     `RULE-SET,GFWList,${PROXY_GROUPS.SELECT}`,
     `GEOIP,cn,DIRECT`,
+    `RULE-SET,direct,DIRECT`,
+    `RULE-SET,proxy,${PROXY_GROUPS.SELECT}`,
     `MATCH,${PROXY_GROUPS.FINAL}`,
 ];
 
