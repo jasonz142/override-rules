@@ -13,18 +13,18 @@ export const ruleProviders: Record<string, RuleProvider> = {
     AWAvenue: {
         type: "http",
         behavior: "domain",
-        format: "text",
+        format: "yaml",
         interval: 86400,
-        url: "https://gcore.jsdelivr.net/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-Clash.mrs",
-        path: "./ruleset/AWAvenue.mrs",
+        url: "https://gcore.jsdelivr.net/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-Clash.yaml",
+        path: "./ruleset/AWAvenue.yaml",
     },
-    AdBlockLite: {
+    adblockmihomo: {
         type: "http",
         behavior: "domain",
-        format: "text",
+        format: "yaml",
         interval: 86400,
-        url: "https://gcore.jsdelivr.net/gh/217heidai/adblockfilters@main/rules/adblockmihomo.mrs",
-        path: "./ruleset/AdBlockLite.mrs",
+        url: "https://gcore.jsdelivr.net/gh/217heidai/adblockfilters@main/rules/adblockmihomo.yaml",
+        path: "./ruleset/adblockmihomo.yaml",
     },
     SogouInput: {
         type: "http",
