@@ -44,6 +44,11 @@ const baseRules = [
     `RULE-SET,direct,DIRECT`,
     `GEOSITE,CN,DIRECT`,
     `GEOSITE,GEOLOCATION-CN,DIRECT`,
+    `GEOSITE,category-games-cn,DIRECT`,   //国内游戏大合集
+    `GEOSITE,category-game-accelerator-cn,DIRECT`,   //国内网游加速器
+    `GEOSITE,category-game-platforms-download,DIRECT`,//全球游戏平台下载 CDN
+    `DOMAIN-SUFFIX,pmang.cloud,${PROXY_GROUPS.SELECT}`,  //棕色尘埃 2 
+    `DOMAIN-SUFFIX,pmang.com,${PROXY_GROUPS.SELECT}`,  //棕色尘埃 2 
     `GEOSITE,CATEGORY-PORN,${PROXY_GROUPS.SELECT}`,   //porn
     `GEOSITE,category-games,${PROXY_GROUPS.SELECT}`,  // 国外游戏
     `GEOSITE,geolocation-!cn,${PROXY_GROUPS.SELECT}`, // 强力国外兜底
