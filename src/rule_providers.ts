@@ -10,6 +10,22 @@ export const ruleProviders: Record<string, RuleProvider> = {
         url: `${CDN_URL}/gh/217heidai/adblockfilters@main/rules/adblockmihomolite.yaml`,
         path: "./ruleset/ADBlock.yaml",
     },
+    AWAvenue: {
+        type: "http",
+        behavior: "domain",
+        format: "yaml",
+        interval: 86400,
+        url: "https://gcore.jsdelivr.net/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-Clash.mrs",
+        path: "./ruleset/AWAvenue.mrs",
+    },
+    AdBlockLite: {
+        type: "http",
+        behavior: "domain",
+        format: "yaml",
+        interval: 86400,
+        url: "https://gcore.jsdelivr.net/gh/217heidai/adblockfilters@main/rules/adblockmihomo.mrs",
+        path: "./ruleset/AdBlockLite.mrs",
+    },
     SogouInput: {
         type: "http",
         behavior: "classical",
