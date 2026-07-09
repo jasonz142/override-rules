@@ -3,6 +3,7 @@ import { PROXY_GROUPS } from "./constants";
 const baseRules = [
     `DST-PORT,22,${PROXY_GROUPS.SSH}`,
     `GEOIP,private,DIRECT,no-resolve`,
+    `GEOSITE,category-ads-all,REJECT`,   //geosite 广告
     `RULE-SET,AWAvenue,${PROXY_GROUPS.AD_BLOCK}`, 
     `RULE-SET,adblockmihomo,${PROXY_GROUPS.AD_BLOCK}`,
     `RULE-SET,ADBlock,${PROXY_GROUPS.AD_BLOCK}`,
@@ -43,6 +44,9 @@ const baseRules = [
     `RULE-SET,direct,DIRECT`,
     `GEOSITE,CN,DIRECT`,
     `GEOSITE,GEOLOCATION-CN,DIRECT`,
+    `GEOSITE,CATEGORY-PORN,${PROXY_GROUPS.SELECT}`,   //porn
+    `GEOSITE,category-games,${PROXY_GROUPS.SELECT}`,  // 国外游戏
+    `GEOSITE,geolocation-!cn,${PROXY_GROUPS.SELECT}`, // 强力国外兜底
     `RULE-SET,proxy,${PROXY_GROUPS.SELECT}`,
     `MATCH,${PROXY_GROUPS.FINAL}`,
 ];
