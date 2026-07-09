@@ -124,7 +124,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
     },
     direct: {
         type: "http",
-        behavior: "classical",
+        behavior: "domain",
         format: "text",
         interval: 86400,
         url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/direct-list.txt",
@@ -132,7 +132,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
     },
     reject: {
         type: "http",
-        behavior: "classical",
+        behavior: "domain",
         format: "text",
         interval: 86400,
         url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/reject-list.txt",
@@ -140,7 +140,7 @@ export const ruleProviders: Record<string, RuleProvider> = {
     },
         proxy: {
         type: "http",
-        behavior: "classical",
+        behavior: "domain",
         format: "text",
         interval: 86400,
         url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/proxy-list.txt",
