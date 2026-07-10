@@ -8,7 +8,6 @@ const baseRules = [
     `RULE-SET,adblockmihomo,${PROXY_GROUPS.AD_BLOCK}`,
     `RULE-SET,ADBlock,${PROXY_GROUPS.AD_BLOCK}`,
     `RULE-SET,AdditionalFilter,${PROXY_GROUPS.AD_BLOCK}`,
-    `RULE-SET,reject,${PROXY_GROUPS.AD_BLOCK}`,
     `RULE-SET,SogouInput,${PROXY_GROUPS.SOGOU_INPUT}`,
     `DOMAIN-SUFFIX,truthsocial.com,${PROXY_GROUPS.TRUTH_SOCIAL}`,
     `RULE-SET,StaticResources,${PROXY_GROUPS.STATIC_RESOURCES}`,
@@ -41,7 +40,6 @@ const baseRules = [
     `RULE-SET,Crypto,${PROXY_GROUPS.CRYPTO}`,
     `RULE-SET,GFWList,${PROXY_GROUPS.SELECT}`,
     `GEOIP,cn,DIRECT`,
-    `RULE-SET,direct,DIRECT`,
     `GEOSITE,CN,DIRECT`,
     `GEOSITE,GEOLOCATION-CN,DIRECT`,
     `GEOSITE,category-games-cn,DIRECT`,   //国内游戏大合集
@@ -50,7 +48,6 @@ const baseRules = [
     `GEOSITE,CATEGORY-PORN,${PROXY_GROUPS.SELECT}`,   //porn
     `GEOSITE,category-games,${PROXY_GROUPS.SELECT}`,  // 国外游戏
     `GEOSITE,geolocation-!cn,${PROXY_GROUPS.SELECT}`, // 强力国外兜底
-    `RULE-SET,proxy,${PROXY_GROUPS.SELECT}`,
     `MATCH,${PROXY_GROUPS.FINAL}`,
 ];
 
