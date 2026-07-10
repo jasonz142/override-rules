@@ -122,28 +122,4 @@ export const ruleProviders: Record<string, RuleProvider> = {
         url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt",
         path: "./ruleset/GFWList.yaml",
     },
-    direct: {
-        type: "http",
-        behavior: "domain",
-        format: "text",
-        interval: 86400,
-        url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/direct-list.txt",
-        path: "./ruleset/direct.txt",
-    },
-    reject: {
-        type: "http",
-        behavior: "domain",
-        format: "text",
-        interval: 86400,
-        url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/reject-list.txt",
-        path: "./ruleset/reject.txt",
-    },
-        proxy: {
-        type: "http",
-        behavior: "domain",
-        format: "text",
-        interval: 86400,
-        url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/proxy-list.txt",
-        path: "./ruleset/proxy.txt",
-    },
 };
