@@ -24,14 +24,14 @@ function parseGroupType(args: ScriptArgs): GroupType {
  */
 export function buildFeatureFlags(args: ScriptArgs): FeatureFlags {
     return {
-        groupType: parseGroupType(args),
+        groupType: args.grouptype !== undefined ? parseGroupType(args) : 1,
         ipv6Enabled: parseBool(args.ipv6),
-        fullConfig: parseBool(args.full),
-        keepAliveEnabled: parseBool(args.keepalive),
-        fakeIPEnabled: parseBool(args.fakeip, true),
+        fullConfig: args.full !== undefined ? parseBool(args.full) : true,
+        keepAliveEnabled: args.keepalive !== undefined ? parseBool(args.keepalive) : true,
+        fakeIPEnabled: args.fakeip !== undefined ? parseBool(args.fakeip) : true,
         quicEnabled: parseBool(args.quic),
-        regexFilter: parseBool(args.regex),
-        tunEnabled: parseBool(args.tun),
+        regexFilter: args.regex !== undefined ? parseBool(args.regex) : true,
+        tunEnabled: args.tun !== undefined ? parseBool(args.tun) : true,
         countryThreshold: parseNumber(args.threshold, 2),
     };
 }
