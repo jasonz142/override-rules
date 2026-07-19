@@ -3,7 +3,7 @@ import { PROXY_GROUPS } from "./constants";
 const baseRules = [
     `DST-PORT,22,${PROXY_GROUPS.SSH}`,
     `GEOIP,private,DIRECT,no-resolve`,
-    `GEOSITE,category-ads-all,REJECT`,   //geosite 广告
+    `GEOSITE,category-ads-all,${PROXY_GROUPS.AD_BLOCK}`,
     `RULE-SET,AWAvenue,${PROXY_GROUPS.AD_BLOCK}`, 
     `RULE-SET,adblockmihomo,${PROXY_GROUPS.AD_BLOCK}`,
     `RULE-SET,ADBlock,${PROXY_GROUPS.AD_BLOCK}`,
