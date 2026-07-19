@@ -14,6 +14,8 @@ const FAKE_IP_FILTER = [
     "*.stun.*.*",
     "*.stun.*.*.*",
     "geosite:cn", 
+    "*.local",
+    "*.lan",
 ];
 
 /**
