@@ -92,7 +92,6 @@ export interface SnifferConfig {
     enable: boolean;
     "force-dns-mapping": boolean;
     "skip-domain": string[];
-    "parse-pure-ipaddress"?: boolean;
 }
 
 export interface TunConfig {
